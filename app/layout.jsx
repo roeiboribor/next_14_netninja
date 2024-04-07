@@ -1,7 +1,10 @@
-import { Inter } from 'next/font/google';
 import './globals.css';
+import { Rubik } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+// COMPONENTS
+import Navbar from './components/Navbar';
+
+const rubik = Rubik({ subsets: ['latin'] });
 
 export const metadata = {
 	title: 'Next 14 Crash Course',
@@ -11,8 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={inter.className + ' bg-gray-50'}>
-				<main className="min-h-screen antialiased">{children}</main>
+			<body className={rubik.className + ' bg-gray-50'} suppressHydrationWarning>
+				<Navbar />
+				<main className="min-h-screen antialiased p-6">{children}</main>
 			</body>
 		</html>
 	);
