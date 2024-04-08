@@ -2,7 +2,7 @@ import './globals.css';
 import { Rubik } from 'next/font/google';
 
 // COMPONENTS
-import Navbar from './components/Navbar';
+import Navbar from '../components/Navbar';
 
 const rubik = Rubik({ subsets: ['latin'] });
 

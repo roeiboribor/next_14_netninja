@@ -19,6 +19,11 @@ const Navbar = () => {
 								Tickets
 							</Link>
 						</li>
+						<li>
+							<Link href="/api/auth/signin" className="transition hover:text-blue-500">
+								Signin
+							</Link>
+						</li>
 					</ul>
 				</div>
 			</div>
